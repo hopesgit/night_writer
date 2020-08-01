@@ -24,6 +24,12 @@ IT4: extra stuff
 
 ---
 
+Aug 1, 2020:
+
+It seems evident that I should make a file to capture the translations I need. I'm thinking that a .csv file should work, since I can can just give it values for the specific letter or word in English, then the ./0 encoding...
+
+---
+
 Requirements as per the project iteration list:
 
 ``` Iteration 1: Creating a Command Line Interface

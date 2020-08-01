@@ -15,4 +15,11 @@ class BrailleTranslatorTest < Minitest::Test
     assert_equal "Braille", trans.direction
   end
 
+  def test_it_can_translate_to_braille_from_english
+    skip
+  end
+
+  def test_it_can_translate_from_braille_to_english
+    skip
+  end
 end

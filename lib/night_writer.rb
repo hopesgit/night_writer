@@ -2,10 +2,10 @@ input_array = ARGV
 first_arg, *the_rest = ARGV
 
 require "./lib/file_reader"
-require "./lib/file_reader"
+require "./lib/braille_translator"
 
 class NightWriter
-  attr_reader :file_reader
+  attr_reader :reader
 
   def initialize
     @reader = FileReader.new

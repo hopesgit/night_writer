@@ -1,6 +1,3 @@
-input_array = ARGV
-first_arg, *the_rest = ARGV
-
 require "./lib/file_reader"
 require "./lib/braille_translator"
 
@@ -9,6 +6,12 @@ class NightWriter
 
   def initialize
     @reader = FileReader.new
+  end
+
+  def read
+    @reader.read(ARGV[0])
+    require "pry"; binding.pry
+    File.write(ARGV[1])
   end
 
   def encode_file_to_braille
@@ -25,9 +28,7 @@ class NightWriter
   end
 end
 
-puts ARGV.inspect
+writer = NightWriter.new
+writer.read
 
-# File.new("#{the_rest}", "a+")
-# File.open("#{first_arg}", "r, t").each do |chars|
-#   # don't know yet
-# end
+puts ARGV.inspect

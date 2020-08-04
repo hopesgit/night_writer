@@ -6,9 +6,10 @@ class BrailleTranslator
     @direction = direction
   end
 
-  def translate_to_braille
+  def translate_to_braille(text_to_translate)
+    
   end
 
-  def translate_to_english
+  def translate_to_english(text_to_translate)
   end
 end
